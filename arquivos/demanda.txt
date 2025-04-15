@@ -1,0 +1,18 @@
+Demanda: Desenvolver um projeto backend em Python para prospecção de novos clientes via e-mail.
+
+1. Importação de Dados:
+Pretendo adquirir uma base de dados com 4.000 CNPJs da empresa Listas de Empresa, que fornece informações públicas
+ de empresas em formato CSV. O projeto deve incluir a criação de um banco de dados PostgreSQL e um script em 
+Python para importar esses dados automaticamente.
+
+2. Automação do Envio de E-mails:
+Com os dados armazenados no PostgreSQL, será necessário desenvolver um sistema de envio automatizado de e-mails, 
+utilizando Python. O envio deve ser baseado em um template pré-definido, no qual algumas informações, como o 
+nome da empresa, serão personalizadas para cada destinatário.
+
+3. Controle de Envios:
+Para evitar o reenvio de e-mails para os mesmos contatos, o sistema deve registrar o status de cada envio no 
+banco de dados. Isso pode ser feito por meio de uma coluna que indique se o e-mail já foi enviado com sucesso.
+
+4. Preciso pensar em alguma maneira para atualização da base de dados após comprar novamente a base de dados 
+atualizada, sem perder o histórico de envio de e-mail
