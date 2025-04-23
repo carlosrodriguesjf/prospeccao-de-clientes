@@ -21,8 +21,8 @@ atualizada, sem perder o histórico de envio de e-mail
 
 Passo 1 - Gerar a base de dados .CSV - OK
 Passo 2 - Criar o Banco de Dados Postgree local - OK
-Passo 3 - Criar um programa para abastecer o banco de dados
-Passo 4 - Importar os dados
+Passo 3 - Criar um programa para abastecer o banco de dados - OK
+Passo 4 - Importar os dados - OK
 Passo 5 - Tratamento dos dados
 Passo 6 - Enviar e-mails para os clientes
 Passo 7 - Registrar o envio banco de dados
