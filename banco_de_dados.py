@@ -7,12 +7,14 @@ import pandas as pd
 
 
 
+
 # importando variaveis
 load_dotenv()
 nome_bd = os.getenv('NOME_BD')
 usuario_bd = os.getenv('USUARIO_BD')
 senha_bd = os.getenv('SENHA_BD')
 porta_bd = os.getenv('PORTA_BD')
+
 
 
 
@@ -96,9 +98,23 @@ def consulta_tabela(conexao):
     # criando o cursor
     cursor = conexao.cursor()
     funcionarios = pd.read_sql_query("SELECT * FROM empresas LIMIT 100", con = conexao)
-    conexao.close()
+    #conexao.close()
 
     return funcionarios
+
+
+
+
+
+# função para criar tabela no banco de dados
+def atualizar_tabela(conexao, empresakey):
+    cursor = conexao.cursor()
+    cursor.execute(
+        "UPDATE empresas SET status = %s WHERE empresakey = %s",
+        ('Contatada', empresakey)
+    )
+    conexao.commit()
+    cursor.close()
 
 
 
