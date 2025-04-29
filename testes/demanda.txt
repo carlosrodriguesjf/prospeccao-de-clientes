@@ -26,4 +26,4 @@ Passo 4 - Importar os dados - OK
 Passo 5 - Tratamento dos dados - OK
 Passo 6 - Enviar e-mails para os clientes - OK
 Passo 7 - Registrar o envio banco de dados - OK
-Passo 8 - Criar logica para inclusão de nova tabela
+Passo 8 - Criar logica para inclusão de nova tabela - OK

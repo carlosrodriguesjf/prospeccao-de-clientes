@@ -19,23 +19,20 @@ SENHA_EMAIL = os.getenv('SENHA_EMAIL')
 #criar_tabela(conexao)
 
 ## preenchendo a tabela
-#preencher_tabela(conexao)
+preencher_tabela(conexao)
 
 
 # consultando a tabela
 funcionarios = consulta_tabela(conexao)
 
 
-#print(funcionarios)
-
+# envio de e-mail e atualização do banco de dados
 for i in range(0, len(funcionarios)):
     empresakey = funcionarios['empresakey'][i]
     nome_empresa = funcionarios['razaosocial'][i]
     email_empresa = funcionarios['email'][i]
 
     enviar_email(EMAIL, SENHA_EMAIL, empresakey, nome_empresa, email_empresa, conexao, atualizar_tabela)
-    
-
 
 
 

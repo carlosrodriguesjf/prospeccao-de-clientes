@@ -1,3 +1,4 @@
+## SCRIPT PARA CONTROLE DE BANCO DE DADOS
 
 # Criar banco de dados 
 import psycopg2
@@ -62,7 +63,7 @@ def criar_tabela(conexao):
 def preencher_tabela(conexao):
 
     # importando planilha
-    tabela = pd.read_csv(r'C:\projetos\prospeccao-de-clientes\dados\empresas_teste_20.csv', sep = ';')
+    tabela = pd.read_csv(r'C:\projetos\prospeccao-de-clientes\dados\empresas.csv', sep = ',')
 
     # para teste, preencheremos a base com as 20 primeiras linhas
     tabela = tabela.head(20)
@@ -101,7 +102,6 @@ def consulta_tabela(conexao):
     #conexao.close()
 
     return funcionarios
-
 
 
 
